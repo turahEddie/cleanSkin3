@@ -11,7 +11,7 @@
     <string name="brand">Brand</string>
     <string name="add_new_makeup">Add New Makeup</string>
     <string name="lipstick">Lipstick</string>
-    <string name="brow_pencil">Brow Pencil</string>
+    <string name="brow_pencil">Eye Brow</string>
     <string name="blush">Blush</string>
     <string name="eyeshadow">Eyeshadow</string>
     //Cruetly part
@@ -23,4 +23,14 @@
     <string name="link"><a href="https://www.crueltyfreekitty.com/list-of-cruelty-free-brands/">Cruelty Free Kitty</a></string>
     <string name="paragraph2">They have a list of the most current brands that are Cruelty Free</string>
     <string-array name="BlushType"><item>Type of Blush</item><item>Cream</item><item>Powder</item></string-array>
+    <string-array name="eyebrow"><item>Type of Brow makeup</item><item>Pencil</item><item>Pomade</item><item>Gel</item><item>Powder</item></string-array>
+    <string-array name="Cleanser"><item>Type of Cleanser</item><item>Foaming</item><item>Cleansing Balm</item><item>Exfoliating</item></string-array>
+    <string-array name="coucealer"><item>Type of Concealer</item><item>Cream</item></string-array>
+    <string-array name="N_A"><item>N/A</item></string-array>
+    <string-array name="eyeshadow"><item>Type of Eyeshadow</item><item>Cream</item><item>Powder</item></string-array>
+    <string-array name="lipstick"><item>Type of Lipstick</item><item>Bullet Lipstick</item><item>Liquid Lipstick</item></string-array>
+    <string-array name="foundation"><item>Type of Foundation</item><item>Liquid</item><item>Cream</item><item>Powder</item><item>BB and CC Creams</item></string-array>
+    <string-array name="powders"><item>Highlighter</item><item>Translucent</item></string-array>
+    <string-array name="treatments"><item>Types of Treatment</item><item>Face Peel</item><item>Blemish and Acne Treatment</item></string-array>
+    <string-array name="mask"><item>Type of Mask</item><item>Sheet Mask</item><item>Wash-off Mask</item></string-array>
 </resources>

@@ -104,7 +104,24 @@ public class Blush extends AppCompatActivity implements DatePickerDialog.OnDateS
                 dialog.dismiss();
             }
         }));
-
+        save.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Calendar beginTime = Calendar.getInstance();
+                beginTime.set(newYear, oldMonth, oldDay, 9, 00);
+                Calendar endTime = Calendar.getInstance();
+                endTime.set(newYear, oldMonth, oldDay, 9, 30);
+                Intent intent = new Intent(Intent.ACTION_EDIT);
+                intent.setType("vnd.android.cursor.item/event");
+                intent.putExtra(CalendarContract.EXTRA_EVENT_BEGIN_TIME, beginTime.getTimeInMillis());
+                intent.putExtra(CalendarContract.EXTRA_EVENT_END_TIME, endTime.getTimeInMillis());
+                intent.putExtra(CalendarContract.Events.ALL_DAY, false);
+                intent.putExtra(CalendarContract.Events.TITLE, "Blush Update for " + newBrandName.getText().toString());
+                intent.putExtra(CalendarContract.Events.DESCRIPTION, "Expiration date for" + newBrandName.getText().toString() + " "+ type.getSelectedItem().toString());
+                startActivity(intent);
+                dialog.dismiss();
+            }
+        });
     }
 
     private void showDatePickerDialog() {
@@ -116,15 +133,14 @@ public class Blush extends AppCompatActivity implements DatePickerDialog.OnDateS
     @Override
     public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
         String date = month + "/ " + dayOfMonth + " / " + year;
-        oldMonth = month;
         oldDay = dayOfMonth;
-        oldYear = year;
+        oldMonth = month;
         newpurchaseDate.setText(date);
         String oppick = type.getSelectedItem().toString();
         if (oppick.equals("Cream")) {
             String newdate = month + "/ " + dayOfMonth + " / " + (year + 1);
-            newexpiration.setText(newdate);
             newYear = (year + 1);
+            newexpiration.setText(newdate);
         } else if (oppick.equals("Powder")) {
             String newdate = month + "/ " + dayOfMonth + " / " + (year + 2);
             newexpiration.setText(newdate);
