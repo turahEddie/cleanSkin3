@@ -9,7 +9,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DashBoard"></activity>
+        <activity android:name=".Sunscreen"></activity>
+        <activity android:name=".Perfume" />
+        <activity android:name=".Toner" />
+        <activity android:name=".Serum" />
+        <activity android:name=".Lotion" />
+        <activity android:name=".cleanser" />
+        <activity android:name=".Facemask" />
+        <activity android:name=".Treatment" />
+        <activity android:name=".Cream" />
+        <activity android:name=".Recycle" />
+        <activity android:name=".ParabenFree" />
+        <activity android:name=".CrueltyFree" />
+        <activity android:name=".AddNewSkinCare" />
+        <activity android:name=".Powder" />
+        <activity android:name=".Blush" />
+        <activity android:name=".Mascara" />
+        <activity android:name=".Eyeshadow" />
+        <activity android:name=".BrowPencil" />
+        <activity android:name=".LipGloss" />
+        <activity android:name=".LipstickClass" />
+        <activity android:name=".FoundationClass" />
+        <activity android:name=".DashBoard" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,5 +45,7 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
     </application>
-
+    <uses-sdk android:minSdkVersion="14"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
 </manifest>

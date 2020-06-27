@@ -27,9 +27,29 @@ public class DashBoard extends AppCompatActivity {
                 startActivity(new Intent(DashBoard.this, AddNewMakeup.class));
             }
         });
-        //skincare.setOnClickListener(this);
-        //cruelty.setOnClickListener(this);
-        //parabenFree.setOnClickListener(this);
-        //recycle.setOnClickListener(this);
+        skincare.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(DashBoard.this, AddNewSkinCare.class));
+            }
+        });
+        cruelty.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(DashBoard.this, CrueltyFree.class));
+            }
+        });
+        parabenFree.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(DashBoard.this, ParabenFree.class));
+            }
+        });
+        recycle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(DashBoard.this, Recycle.class));
+            }
+        });
     }
 }

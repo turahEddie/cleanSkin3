@@ -24,7 +24,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         fade_in = AnimationUtils.loadAnimation(this,R.anim.fade_in);
-
         logo = findViewById(R.id.logo);
         text = findViewById(R.id.devName);
 

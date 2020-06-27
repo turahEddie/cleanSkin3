@@ -5,5 +5,22 @@
     <string name="addnew">Add new Makeup</string>
     <string name="submit">submit</string>
     <string name="add">Add to Calendar</string>
-    <string name ="concealer">Concealer</string>
+    <string name="concealer">Concealer</string>
+    <string name="product_info">Product Information:</string>
+    <string name="tips">TIPS :</string>
+    <string name="brand">Brand</string>
+    <string name="add_new_makeup">Add New Makeup</string>
+    <string name="lipstick">Lipstick</string>
+    <string name="brow_pencil">Brow Pencil</string>
+    <string name="blush">Blush</string>
+    <string name="eyeshadow">Eyeshadow</string>
+    //Cruetly part
+    <string name="why">Why is Cruelty free makeup important?</string>
+    <string name="crueltyFreeParagraph">As we know today that more and more makeup brands are producing cruelty makeup.
+    Cruelty free isn\'t just a hashtag or a trend to jump on. It a movement that was first started by Lady Dowding
+    back in 1959 when she introduced "Beauty without cruelty". She persuaded manufacturers to use fake fur instead of real fur.
+    How would you know if your makeup is cruelty free? Here is a quick link to </string>
+    <string name="link"><a href="https://www.crueltyfreekitty.com/list-of-cruelty-free-brands/">Cruelty Free Kitty</a></string>
+    <string name="paragraph2">They have a list of the most current brands that are Cruelty Free</string>
+    <string-array name="BlushType"><item>Type of Blush</item><item>Cream</item><item>Powder</item></string-array>
 </resources>
