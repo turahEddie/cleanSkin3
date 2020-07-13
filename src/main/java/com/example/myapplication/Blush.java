@@ -24,6 +24,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Spinner;
 
+import java.io.IOException;
 import java.util.Calendar;
 
 public class Blush extends AppCompatActivity implements DatePickerDialog.OnDateSetListener {
@@ -137,14 +138,21 @@ public class Blush extends AppCompatActivity implements DatePickerDialog.OnDateS
         oldMonth = month;
         newpurchaseDate.setText(date);
         String oppick = type.getSelectedItem().toString();
-        if (oppick.equals("Cream")) {
-            String newdate = month + "/ " + dayOfMonth + " / " + (year + 1);
-            newYear = (year + 1);
-            newexpiration.setText(newdate);
-        } else if (oppick.equals("Powder")) {
-            String newdate = month + "/ " + dayOfMonth + " / " + (year + 2);
-            newexpiration.setText(newdate);
-            newYear = (year + 2);
+        try {
+            if (oppick.equals("Cream")) {
+                String newdate = month + "/ " + dayOfMonth + " / " + (year + 1);
+                newYear = (year + 1);
+                newexpiration.setText(newdate);
+            } else if (oppick.equals("Powder")) {
+                String newdate = month + "/ " + dayOfMonth + " / " + (year + 2);
+                newexpiration.setText(newdate);
+                newYear = (year + 2);
+            }
+            else if (oppick.equals(" ")){
+
+            }
+        } catch (Exception e) {
+
         }
     }
 }

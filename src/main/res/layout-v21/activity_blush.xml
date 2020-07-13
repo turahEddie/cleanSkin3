@@ -52,11 +52,11 @@
 
     <TextView
         android:id="@+id/textView17"
-        android:layout_width="271dp"
-        android:layout_height="60dp"
+        android:layout_width="275dp"
+        android:layout_height="72dp"
         android:layout_marginTop="164dp"
         android:gravity="center"
-        android:text="@string/concealertext2"
+        android:text="@string/blushtext2"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -71,7 +71,7 @@
         android:layout_height="63dp"
         android:layout_marginTop="72dp"
         android:gravity="center"
-        android:text="@string/concealertext"
+        android:text="@string/blushtext"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/textView17"
         app:layout_constraintEnd_toEndOf="parent"

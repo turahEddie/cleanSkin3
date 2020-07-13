@@ -1,7 +1,5 @@
 <resources>
     <string name="app_name">My Application</string>
-    <string name="concealertext">Concealer can last up to can last up to 1 Year. </string>
-    <string name="concealertext2">If it starts to smell or clump up trow it away immediately</string>
     <string name="addnew">Add new Makeup</string>
     <string name="submit">submit</string>
     <string name="add">Add to Calendar</string>
@@ -14,7 +12,7 @@
     <string name="brow_pencil">Eye Brow</string>
     <string name="blush">Blush</string>
     <string name="eyeshadow">Eyeshadow</string>
-    //Cruetly part
+-----------------------------------------------------------------------------------------------------
     <string name="why">Why is Cruelty free makeup important?</string>
     <string name="crueltyFreeParagraph">As we know today that more and more makeup brands are producing cruelty makeup.
     Cruelty free isn\'t just a hashtag or a trend to jump on. It a movement that was first started by Lady Dowding
@@ -22,7 +20,8 @@
     How would you know if your makeup is cruelty free? Here is a quick link to </string>
     <string name="link"><a href="https://www.crueltyfreekitty.com/list-of-cruelty-free-brands/">Cruelty Free Kitty</a></string>
     <string name="paragraph2">They have a list of the most current brands that are Cruelty Free</string>
-    <string-array name="BlushType"><item>Type of Blush</item><item>Cream</item><item>Powder</item></string-array>
+-----------------------------------------------------------------------------------------------------
+    <string-array name="BlushType"><item>Type of Blush</item><item>Cream</item><item>Powder</item><item>Liquid</item></string-array>
     <string-array name="eyebrow"><item>Type of Brow makeup</item><item>Pencil</item><item>Pomade</item><item>Gel</item><item>Powder</item></string-array>
     <string-array name="Cleanser"><item>Type of Cleanser</item><item>Foaming</item><item>Cleansing Balm</item><item>Exfoliating</item></string-array>
     <string-array name="coucealer"><item>Type of Concealer</item><item>Cream</item></string-array>
@@ -33,4 +32,11 @@
     <string-array name="powders"><item>Highlighter</item><item>Translucent</item></string-array>
     <string-array name="treatments"><item>Types of Treatment</item><item>Face Peel</item><item>Blemish and Acne Treatment</item></string-array>
     <string-array name="mask"><item>Type of Mask</item><item>Sheet Mask</item><item>Wash-off Mask</item></string-array>
+    -----------------------------------------------------------------------------------------------------
+    <string name="concealertext">Concealer can last up to can last up to 1 Year. </string>
+    <string name="concealertext2">If it starts to smell or clump up trow it away immediately</string>
+    <string name ="blushtext">Types of Blush: Cream, Liquid, and Powder</string>
+    <string name="blushtext2">To keep blush longevity, it is highly suggested to wash your brushes</string>
+    <string name ="EyebrowTypes">Types of Brow Products: Cream </string>
+
 </resources>
