@@ -1,0 +1,2 @@
+include ':cleanskin'
+rootProject.name = "Clean Skin"

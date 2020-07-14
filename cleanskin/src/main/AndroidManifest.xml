@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.keturahedwards.cleanskin">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Sunscreen"></activity>
+        <activity android:name=".Perfume" />
+        <activity android:name=".Toner" />
+        <activity android:name=".Serum" />
+        <activity android:name=".Lotion" />
+        <activity android:name=".Cleanser" />
+        <activity android:name=".Facemask" />
+        <activity android:name=".Treatment" />
+        <activity android:name=".Cream" />
+        <activity android:name=".Recycle" />
+        <activity android:name=".ParabenFree" />
+        <activity android:name=".CrueltyFree" />
+        <activity android:name=".AddNewSkinCare" />
+        <activity android:name=".Powder" />
+        <activity android:name=".Blush" />
+        <activity android:name=".Mascara" />
+        <activity android:name=".Eyeshadow" />
+        <activity android:name=".BrowPencil" />
+        <activity android:name=".LipGloss" />
+        <activity android:name=".LipstickClass" />
+        <activity android:name=".FoundationClass" />
+        <activity android:name=".DashBoard" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AddNewMakeup" />
+        <activity android:name=".ConcealerClass" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+</manifest>
