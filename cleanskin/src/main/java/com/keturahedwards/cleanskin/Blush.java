@@ -4,9 +4,11 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
+import android.app.Dialog;
 import android.content.ContentProvider;
 import android.content.ContentResolver;
 import android.content.ContentValues;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -132,7 +134,7 @@ public class Blush extends AppCompatActivity implements DatePickerDialog.OnDateS
     }
 
     @Override
-    public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+    public void onDateSet(DatePicker view, final int year, final int month, final int dayOfMonth) {
         String date = month + "/ " + dayOfMonth + " / " + year;
         oldDay = dayOfMonth;
         oldMonth = month;
@@ -148,7 +150,10 @@ public class Blush extends AppCompatActivity implements DatePickerDialog.OnDateS
                 newexpiration.setText(newdate);
                 newYear = (year + 2);
             }
-            else if (oppick.equals(" ")){
+            else if(oppick.equals("Liquid")){
+
+            }
+            else if (oppick.equals("Type of Blush")){
 
             }
         } catch (Exception e) {

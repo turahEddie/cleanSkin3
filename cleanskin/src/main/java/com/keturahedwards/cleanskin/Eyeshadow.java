@@ -72,7 +72,7 @@ public class Eyeshadow extends AppCompatActivity implements DatePickerDialog.OnD
         newpurchaseDate = (EditText) createPopUpWindow.findViewById(R.id.NewPuchaseDate);
         newexpiration = (EditText) createPopUpWindow.findViewById(R.id.NewExpirationDate);
 
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.eyebrow, android.R.layout.simple_spinner_dropdown_item);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.eyeshadow, android.R.layout.simple_spinner_dropdown_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         type.setAdapter(adapter);
 
@@ -140,10 +140,10 @@ public class Eyeshadow extends AppCompatActivity implements DatePickerDialog.OnD
             newYear = (year + 1);
         }else if(oppick.equals("Cream")){
             int tempMonth = month + 6;
-            if(tempMonth< 12){
-                String newDate = (12 -tempMonth ) + " / " + dayOfMonth + " / " + (year + 1);
+            if(tempMonth > 12){
+                String newDate = (tempMonth - 12 ) + " / " + dayOfMonth + " / " + (year + 1);
                 newexpiration.setText(newDate);
-                newMonth = (12 - tempMonth);
+                newMonth = (tempMonth - 12);
                 newYear = (year +1);
 
             }else{

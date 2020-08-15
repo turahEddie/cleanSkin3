@@ -3,15 +3,15 @@
     <string name="addnew">Add new Makeup</string>
     <string name="submit">submit</string>
     <string name="add">Add to Calendar</string>
-    <string name="concealer">Concealer</string>
-    <string name="product_info">Product Information:</string>
-    <string name="tips">TIPS :</string>
     <string name="brand">Brand</string>
     <string name="add_new_makeup">Add New Makeup</string>
     <string name="lipstick">Lipstick</string>
     <string name="brow_pencil">Eye Brow</string>
     <string name="blush">Blush</string>
     <string name="eyeshadow">Eyeshadow</string>
+    <string name="concealer">Concealer</string>
+    <string name="product_info">Product Information:</string>
+    <string name="tips">TIPS :</string>
 -----------------------------------------------------------------------------------------------------
     <string name="why">Why is Cruelty free makeup important?</string>
     <string name="crueltyFreeParagraph">As we know today that more and more makeup brands are producing cruelty makeup.

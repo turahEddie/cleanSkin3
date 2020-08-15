@@ -138,7 +138,7 @@ public class BrowPencil extends AppCompatActivity implements DatePickerDialog.On
             newYear = (year + 2);
         }else if(oppick.equals("Gel")){
             int newMonth = month + 6;
-            if(newMonth< 12){
+            if(newMonth > 12){
                 String newDate = (newMonth - 12) + " / " + dayOfMonth + " / " + (year + 1);
                 newexpiration.setText(newDate);
                 oldMonth = (newMonth - 12);

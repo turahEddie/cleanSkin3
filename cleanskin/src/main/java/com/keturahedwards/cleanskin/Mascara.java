@@ -135,10 +135,10 @@ public class Mascara extends AppCompatActivity implements DatePickerDialog.OnDat
         oldYear = year;
         newpurchaseDate.setText(date);
         int tempMonth = month + 6;
-        if (tempMonth <= 12) {
-            String newdate = (12 - tempMonth) + "/ " + dayOfMonth + " / " + (year + 1);
+        if (tempMonth >= 12) {
+            String newdate = (tempMonth - 12) + "/ " + dayOfMonth + " / " + (year + 1);
             newexpiration.setText(newdate);
-            newMonth = (12 - tempMonth);
+            newMonth = (tempMonth - 12);
             newYear = (year + 1);
 
         } else {
