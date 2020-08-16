@@ -8,27 +8,27 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="495dp"
-        android:layout_height="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.678"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/round_backgroud" />
+        app:srcCompat="@drawable/background" />
 
     <ImageView
         android:id="@+id/home"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintHorizontal_bias="0.095"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.34"
-        app:srcCompat="@drawable/skincare" />
+        app:layout_constraintVertical_bias="0.446"
+        app:srcCompat="@drawable/face_mask1" />
 
     <TextView
         android:id="@+id/textView4"
@@ -47,8 +47,8 @@
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="420dp"
-        android:layout_height="600dp"
+        android:layout_width="385dp"
+        android:layout_height="605dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -67,7 +67,7 @@
 
                 <LinearLayout
                     android:id="@+id/cream_btn"
-                    android:layout_width="140dp"
+                    android:layout_width="130dp"
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:orientation="vertical">
@@ -90,7 +90,7 @@
 
                 <LinearLayout
                     android:id="@+id/mask_btn"
-                    android:layout_width="140dp"
+                    android:layout_width="130dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:gravity="center"
@@ -114,7 +114,7 @@
 
                 <LinearLayout
                     android:id="@+id/cleanser_btn"
-                    android:layout_width="140dp"
+                    android:layout_width="120dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:gravity="center"
@@ -144,7 +144,7 @@
 
                 <LinearLayout
                     android:id="@+id/lotion_btn"
-                    android:layout_width="140dp"
+                    android:layout_width="130dp"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:padding="10dp">
@@ -168,7 +168,7 @@
 
                 <LinearLayout
                     android:id="@+id/toner_btn"
-                    android:layout_width="140dp"
+                    android:layout_width="130dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:gravity="center"
@@ -179,7 +179,7 @@
                         android:id="@+id/imageView11"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        app:srcCompat="@drawable/toner01" />
+                        app:srcCompat="@drawable/toner5" />
 
                     <TextView
                         android:id="@+id/textView10"
@@ -193,7 +193,7 @@
 
                 <LinearLayout
                     android:id="@+id/serum_btn"
-                    android:layout_width="140dp"
+                    android:layout_width="130dp"
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:orientation="vertical"
@@ -204,7 +204,7 @@
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:layout_gravity="center"
-                        app:srcCompat="@drawable/serum_1" />
+                        app:srcCompat="@drawable/serum" />
 
                     <TextView
                         android:id="@+id/textView9"
@@ -224,8 +224,8 @@
 
                 <LinearLayout
                     android:id="@+id/perfume_btn"
-                    android:layout_width="140dp"
-                    android:layout_height="150dp"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:orientation="vertical"
@@ -239,7 +239,7 @@
                         app:srcCompat="@drawable/perfume01" />
 
                     <TextView
-                        android:id="@+id/textView5"
+                        android:id="@+id/Perfume"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -251,8 +251,8 @@
 
                 <LinearLayout
                     android:id="@+id/treatment_btn"
-                    android:layout_width="140dp"
-                    android:layout_height="150dp"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:orientation="vertical"
@@ -279,7 +279,7 @@
                 <LinearLayout
                     android:id="@+id/sunscreen_btn"
                     android:layout_width="130dp"
-                    android:layout_height="150dp"
+                    android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:orientation="vertical"
@@ -298,6 +298,89 @@
                         android:fontFamily="@font/noto_sans"
                         android:gravity="center"
                         android:text="Sunscreen"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/pills_btn"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/pill_pic"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/pills_nature" />
+
+                    <TextView
+                        android:id="@+id/Pills"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/noto_sans"
+                        android:gravity="center"
+                        android:text="Pills"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/facial_treatment_btn"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/facial_treatment" />
+
+                    <TextView
+                        android:id="@+id/facialTreatment"
+                        android:layout_width="107dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/noto_sans"
+                        android:gravity="center"
+                        android:text="Facial Treatment"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tissue_paper_btn"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        app:srcCompat="@drawable/tissue_paper" />
+
+                    <TextView
+                        android:id="@+id/tissuePaper"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/noto_sans"
+                        android:gravity="center"
+                        android:text="Tissue Paper"
                         android:textSize="18sp" />
                 </LinearLayout>
             </LinearLayout>

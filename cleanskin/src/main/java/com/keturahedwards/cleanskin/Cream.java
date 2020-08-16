@@ -30,7 +30,7 @@ public class Cream extends AppCompatActivity implements DatePickerDialog.OnDateS
     private EditText newBrandName, newpurchaseDate, newexpiration;
     private Spinner type;
     private Button save, cancel;
-    private ImageButton datePicker;
+    private ImageView datePicker;
     private int oldMonth;
     private int oldYear;
     private int oldDay;
@@ -78,7 +78,7 @@ public class Cream extends AppCompatActivity implements DatePickerDialog.OnDateS
         save = (Button) createPopUpWindow.findViewById(R.id.save);
         cancel = (Button) createPopUpWindow.findViewById(R.id.cancel);
 
-        datePicker = (ImageButton) createPopUpWindow.findViewById(R.id.datePicker);
+        datePicker = (ImageView) createPopUpWindow.findViewById(R.id.datePicker);
         dialogBuilder.setView(createPopUpWindow);
         dialog = dialogBuilder.create();
         dialog.show();

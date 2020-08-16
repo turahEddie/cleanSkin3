@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/eyelash_btn"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="495dp"
-        android:layout_height="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.678"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/round_backgroud" />
+        app:srcCompat="@drawable/background" />
 
     <ImageView
         android:id="@+id/home"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.074"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.34"
-        app:srcCompat="@drawable/cosmetics01" />
+        app:srcCompat="@drawable/eyeshadow4" />
 
     <TextView
         android:id="@+id/textView4"
@@ -40,20 +40,20 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/scrollView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/home"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.04" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="420dp"
-        android:layout_height="600dp"
+        android:layout_width="385dp"
+        android:layout_height="605dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintVertical_bias="0">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -67,7 +67,7 @@
 
                 <LinearLayout
                     android:id="@+id/mascara_btn"
-                    android:layout_width="140dp"
+                    android:layout_width="130dp"
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:orientation="vertical">
@@ -90,7 +90,7 @@
 
                 <LinearLayout
                     android:id="@+id/blush_btn"
-                    android:layout_width="140dp"
+                    android:layout_width="130dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:gravity="center"
@@ -100,7 +100,7 @@
                         android:id="@+id/imageView14"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        app:srcCompat="@drawable/grooming" />
+                        app:srcCompat="@drawable/blush" />
 
                     <TextView
                         android:id="@+id/textView13"
@@ -114,7 +114,7 @@
 
                 <LinearLayout
                     android:id="@+id/powder_btn"
-                    android:layout_width="140dp"
+                    android:layout_width="130dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:gravity="center"
@@ -124,7 +124,7 @@
                         android:id="@+id/imageView15"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        app:srcCompat="@drawable/powder01" />
+                        app:srcCompat="@drawable/powder3" />
 
                     <TextView
                         android:id="@+id/textView14"
@@ -144,7 +144,7 @@
 
                 <LinearLayout
                     android:id="@+id/eyeshadow_btn"
-                    android:layout_width="140dp"
+                    android:layout_width="130dp"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:padding="10dp">
@@ -154,7 +154,7 @@
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:layout_gravity="center"
-                        app:srcCompat="@drawable/eyeshadow" />
+                        app:srcCompat="@drawable/eyeshadow2" />
 
                     <TextView
                         android:id="@+id/textView12"
@@ -168,7 +168,7 @@
 
                 <LinearLayout
                     android:id="@+id/browPencil_btn"
-                    android:layout_width="140dp"
+                    android:layout_width="130dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:gravity="center"
@@ -179,7 +179,7 @@
                         android:id="@+id/imageView11"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        app:srcCompat="@drawable/eyebrow_pencil" />
+                        app:srcCompat="@drawable/eyebrow" />
 
                     <TextView
                         android:id="@+id/textView10"
@@ -193,7 +193,7 @@
 
                 <LinearLayout
                     android:id="@+id/lipgloss_btn"
-                    android:layout_width="140dp"
+                    android:layout_width="130dp"
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:orientation="vertical"
@@ -204,7 +204,7 @@
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:layout_gravity="center"
-                        app:srcCompat="@drawable/lipstick01" />
+                        app:srcCompat="@drawable/lip_gloss_1" />
 
                     <TextView
                         android:id="@+id/textView9"
@@ -224,8 +224,8 @@
 
                 <LinearLayout
                     android:id="@+id/concealer_btn"
-                    android:layout_width="140dp"
-                    android:layout_height="150dp"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:orientation="vertical"
@@ -236,10 +236,10 @@
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/concealer" />
+                        app:srcCompat="@drawable/concealer01" />
 
                     <TextView
-                        android:id="@+id/textView5"
+                        android:id="@+id/Perfume"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -251,8 +251,8 @@
 
                 <LinearLayout
                     android:id="@+id/foundation_btn"
-                    android:layout_width="140dp"
-                    android:layout_height="150dp"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:orientation="vertical"
@@ -263,7 +263,7 @@
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/foundation02" />
+                        app:srcCompat="@drawable/foundation" />
 
                     <TextView
                         android:id="@+id/textView6"
@@ -279,7 +279,7 @@
                 <LinearLayout
                     android:id="@+id/lipstick_btn"
                     android:layout_width="130dp"
-                    android:layout_height="150dp"
+                    android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:orientation="vertical"
@@ -289,7 +289,7 @@
                         android:id="@+id/imageView8"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        app:srcCompat="@drawable/lipstick_1" />
+                        app:srcCompat="@drawable/mattelip" />
 
                     <TextView
                         android:id="@+id/textView7"
@@ -298,6 +298,86 @@
                         android:fontFamily="@font/noto_sans"
                         android:gravity="center"
                         android:text="@string/lipstick"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/eyelashes_btn"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/eyelashes" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/noto_sans"
+                        android:gravity="center"
+                        android:text="Eyelashes"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/nail_btn"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/nail_polish01" />
+
+                    <TextView
+                        android:id="@+id/Nail"
+                        android:layout_width="107dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/noto_sans"
+                        android:gravity="center"
+                        android:text="Nail"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/brush_btn"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        app:srcCompat="@drawable/sponge" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/noto_sans"
+                        android:gravity="center"
+                        android:text="Brushes"
                         android:textSize="18sp" />
                 </LinearLayout>
             </LinearLayout>

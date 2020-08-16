@@ -20,17 +20,17 @@
 
     <ImageView
         android:id="@+id/home"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:elevation="10dp"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
         android:contentDescription="home button"
+        android:elevation="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.044"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023"
-        app:srcCompat="@drawable/cosmetics01" />
+        app:srcCompat="@drawable/eyeshadow4" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -41,10 +41,10 @@
         android:fadingEdge="none"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView16"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.647"
         app:srcCompat="@drawable/concealer" />
 
     <TextView

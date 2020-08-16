@@ -16,7 +16,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/cosmetics01" />
+        app:srcCompat="@drawable/eyeshadow4" />
 
     <ImageView
         android:id="@+id/skin_care_page"
@@ -29,7 +29,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/skincare" />
+        app:srcCompat="@drawable/face_mask1" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -40,7 +40,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/round_backgroud" />
+        app:srcCompat="@drawable/background" />
 
     <TextView
         android:id="@+id/textView"
