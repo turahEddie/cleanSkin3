@@ -31,11 +31,12 @@ public class Sunscreen extends AppCompatActivity implements DatePickerDialog.OnD
     private EditText newBrandName, newpurchaseDate, newexpiration;
     private Spinner type;
     private Button save, cancel;
-    private ImageButton datePicker;
+    private ImageView datePicker;
     private int oldMonth;
     private int oldYear;
     private int oldDay;
     private int newYear;
+    private ImageView icon;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,6 +72,9 @@ public class Sunscreen extends AppCompatActivity implements DatePickerDialog.OnD
         newpurchaseDate = (EditText) createPopUpWindow.findViewById(R.id.NewPuchaseDate);
         newexpiration = (EditText) createPopUpWindow.findViewById(R.id.NewExpirationDate);
 
+        icon = (ImageView) createPopUpWindow.findViewById(R.id.blank);
+        icon.setImageResource((R.drawable.sunscreen));
+
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.N_A, android.R.layout.simple_spinner_dropdown_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         type.setAdapter(adapter);
@@ -78,7 +82,7 @@ public class Sunscreen extends AppCompatActivity implements DatePickerDialog.OnD
         save = (Button) createPopUpWindow.findViewById(R.id.save);
         cancel = (Button) createPopUpWindow.findViewById(R.id.cancel);
 
-        datePicker = (ImageButton) createPopUpWindow.findViewById(R.id.datePicker);
+        datePicker = (ImageView) createPopUpWindow.findViewById(R.id.datePicker);
         dialogBuilder.setView(createPopUpWindow);
         dialog = dialogBuilder.create();
         dialog.show();

@@ -35,6 +35,7 @@ public class BrowPencil extends AppCompatActivity implements DatePickerDialog.On
     private int oldYear;
     private int oldDay;
     private int newYear;
+    private ImageView icon;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,6 +68,8 @@ public class BrowPencil extends AppCompatActivity implements DatePickerDialog.On
         final View createPopUpWindow = getLayoutInflater().inflate(R.layout.popup, null);
         newBrandName = (EditText) createPopUpWindow.findViewById(R.id.newBrandName);
         type = (Spinner) createPopUpWindow.findViewById(R.id.type);
+        icon = (ImageView) createPopUpWindow.findViewById(R.id.blank);
+        icon.setImageResource((R.drawable.eyebrow_pencil));
         newpurchaseDate = (EditText) createPopUpWindow.findViewById(R.id.NewPuchaseDate);
         newexpiration = (EditText) createPopUpWindow.findViewById(R.id.NewExpirationDate);
 

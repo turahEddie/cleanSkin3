@@ -35,7 +35,7 @@ public class Cream extends AppCompatActivity implements DatePickerDialog.OnDateS
     private int oldYear;
     private int oldDay;
     private int newYear;
-
+    private ImageView icon;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -70,6 +70,8 @@ public class Cream extends AppCompatActivity implements DatePickerDialog.OnDateS
         type = (Spinner) createPopUpWindow.findViewById(R.id.type);
         newpurchaseDate = (EditText) createPopUpWindow.findViewById(R.id.NewPuchaseDate);
         newexpiration = (EditText) createPopUpWindow.findViewById(R.id.NewExpirationDate);
+        icon = (ImageView) createPopUpWindow.findViewById(R.id.blank);
+        icon.setImageResource((R.drawable.moisturizer));
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.N_A, android.R.layout.simple_spinner_dropdown_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);

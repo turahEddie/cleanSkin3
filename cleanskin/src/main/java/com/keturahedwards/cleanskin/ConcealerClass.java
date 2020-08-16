@@ -36,7 +36,7 @@ public class ConcealerClass extends AppCompatActivity implements DatePickerDialo
     private int oldYear;
     private int oldDay;
     private int newYear;
-
+    private ImageView icon;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -70,6 +70,9 @@ public class ConcealerClass extends AppCompatActivity implements DatePickerDialo
         type = (Spinner) createPopUpWindow.findViewById(R.id.type);
         newpurchaseDate = (EditText) createPopUpWindow.findViewById(R.id.NewPuchaseDate);
         newexpiration = (EditText) createPopUpWindow.findViewById(R.id.NewExpirationDate);
+
+        icon = (ImageView) createPopUpWindow.findViewById(R.id.blank);
+        icon.setImageResource((R.drawable.concealer));
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.coucealer, android.R.layout.simple_spinner_dropdown_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);

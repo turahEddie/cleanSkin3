@@ -10,6 +10,7 @@ import android.content.ContentResolver;
 import android.content.ContentValues;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.CalendarContract;
@@ -43,7 +44,7 @@ public class Blush extends AppCompatActivity implements DatePickerDialog.OnDateS
     private int oldYear;
     private int oldDay;
     private int newYear;
-
+    private ImageView icon;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -74,7 +75,9 @@ public class Blush extends AppCompatActivity implements DatePickerDialog.OnDateS
         dialogBuilder = new AlertDialog.Builder(this);
         final View createPopUpWindow = getLayoutInflater().inflate(R.layout.popup, null);
         newBrandName = (EditText) createPopUpWindow.findViewById(R.id.newBrandName);
+        icon = (ImageView) createPopUpWindow.findViewById(R.id.blank);
         type = (Spinner) createPopUpWindow.findViewById(R.id.type);
+        icon.setImageResource((R.drawable.blush));
         newpurchaseDate = (EditText) createPopUpWindow.findViewById(R.id.NewPuchaseDate);
         newexpiration = (EditText) createPopUpWindow.findViewById(R.id.NewExpirationDate);
 

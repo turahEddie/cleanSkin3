@@ -30,13 +30,13 @@ public class Perfume extends AppCompatActivity implements DatePickerDialog.OnDat
     private EditText newBrandName, newpurchaseDate, newexpiration;
     private Spinner type;
     private Button save, cancel;
-    private ImageButton datePicker;
+    private ImageView datePicker;
 
     private int oldMonth;
     private int oldYear;
     private int oldDay;
     private int newYear;
-
+    private ImageView icon;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -70,6 +70,9 @@ public class Perfume extends AppCompatActivity implements DatePickerDialog.OnDat
         newpurchaseDate = (EditText) createPopUpWindow.findViewById(R.id.NewPuchaseDate);
         newexpiration = (EditText) createPopUpWindow.findViewById(R.id.NewExpirationDate);
 
+        icon = (ImageView) createPopUpWindow.findViewById(R.id.blank);
+        icon.setImageResource((R.drawable.perfume01));
+
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.N_A, android.R.layout.simple_spinner_dropdown_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         type.setAdapter(adapter);
@@ -77,7 +80,7 @@ public class Perfume extends AppCompatActivity implements DatePickerDialog.OnDat
         save = (Button) createPopUpWindow.findViewById(R.id.save);
         cancel = (Button) createPopUpWindow.findViewById(R.id.cancel);
 
-        datePicker = (ImageButton) createPopUpWindow.findViewById(R.id.datePicker);
+        datePicker = (ImageView) createPopUpWindow.findViewById(R.id.datePicker);
         dialogBuilder.setView(createPopUpWindow);
         dialog = dialogBuilder.create();
         dialog.show();

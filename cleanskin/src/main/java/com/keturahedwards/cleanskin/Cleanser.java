@@ -36,6 +36,7 @@ public class Cleanser extends AppCompatActivity implements DatePickerDialog.OnDa
     private int oldYear;
     private int oldDay;
     private int newYear;
+    private ImageView icon;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,6 +75,9 @@ public class Cleanser extends AppCompatActivity implements DatePickerDialog.OnDa
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.Cleanser, android.R.layout.simple_spinner_dropdown_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         type.setAdapter(adapter);
+
+        icon = (ImageView) createPopUpWindow.findViewById(R.id.blank);
+        icon.setImageResource((R.drawable.facial_foam));
 
         save = (Button) createPopUpWindow.findViewById(R.id.save);
         cancel = (Button) createPopUpWindow.findViewById(R.id.cancel);
