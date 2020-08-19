@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.provider.CalendarContract;
 import android.view.View;
@@ -36,6 +38,7 @@ public class FoundationClass extends AppCompatActivity implements DatePickerDial
     private int oldDay;
     private int newYear;
     private int newMonth;
+    private ImageView icon;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,6 +70,8 @@ public class FoundationClass extends AppCompatActivity implements DatePickerDial
         final View createPopUpWindow = getLayoutInflater().inflate(R.layout.popup, null);
         newBrandName = (EditText) createPopUpWindow.findViewById(R.id.newBrandName);
         type = (Spinner) createPopUpWindow.findViewById(R.id.type);
+        icon = (ImageView) createPopUpWindow.findViewById(R.id.blank);
+        icon.setImageResource((R.drawable.foundation));
         newpurchaseDate = (EditText) createPopUpWindow.findViewById(R.id.NewPuchaseDate);
         newexpiration = (EditText) createPopUpWindow.findViewById(R.id.NewExpirationDate);
 
@@ -80,6 +85,7 @@ public class FoundationClass extends AppCompatActivity implements DatePickerDial
         datePicker = (ImageView) createPopUpWindow.findViewById(R.id.datePicker);
         dialogBuilder.setView(createPopUpWindow);
         dialog = dialogBuilder.create();
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         dialog.show();
 
         datePicker.setOnClickListener(new View.OnClickListener() {

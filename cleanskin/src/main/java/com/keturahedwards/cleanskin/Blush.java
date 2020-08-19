@@ -10,6 +10,8 @@ import android.content.ContentResolver;
 import android.content.ContentValues;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
@@ -91,6 +93,7 @@ public class Blush extends AppCompatActivity implements DatePickerDialog.OnDateS
         datePicker = (ImageView) createPopUpWindow.findViewById(R.id.datePicker);
         dialogBuilder.setView(createPopUpWindow);
         dialog = dialogBuilder.create();
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         dialog.show();
 
         datePicker.setOnClickListener(new View.OnClickListener() {

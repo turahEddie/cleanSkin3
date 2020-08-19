@@ -17,13 +17,12 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Spinner;
 
 import java.util.Calendar;
 
-public class LipGloss extends AppCompatActivity implements DatePickerDialog.OnDateSetListener {
+public class Eyelash extends AppCompatActivity implements DatePickerDialog.OnDateSetListener{
     Animation zoom_in;
     ImageView background_image;
 
@@ -43,24 +42,25 @@ public class LipGloss extends AppCompatActivity implements DatePickerDialog.OnDa
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_lip_gloss);
+        setContentView(R.layout.activity_eyelash);
 
         zoom_in = AnimationUtils.loadAnimation(this, R.anim.slide_down);
         background_image = findViewById(R.id.background);
         background_image.setAnimation(zoom_in);
 
-        ImageView home = findViewById(R.id.home);
-        home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(LipGloss.this, DashBoard.class));
-            }
-        });
         Button add = findViewById(R.id.add);
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 createCalenderPopIp();
+            }
+        });
+
+        ImageView home = findViewById(R.id.home);
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Eyelash.this, DashBoard.class));
             }
         });
     }
@@ -71,9 +71,8 @@ public class LipGloss extends AppCompatActivity implements DatePickerDialog.OnDa
         type = (Spinner) createPopUpWindow.findViewById(R.id.type);
         newpurchaseDate = (EditText) createPopUpWindow.findViewById(R.id.NewPuchaseDate);
         newexpiration = (EditText) createPopUpWindow.findViewById(R.id.NewExpirationDate);
-
         icon = (ImageView) createPopUpWindow.findViewById(R.id.blank);
-        icon.setImageResource((R.drawable.lip_gloss_1));
+        icon.setImageResource((R.drawable.eyelashes));
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.N_A, android.R.layout.simple_spinner_dropdown_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -117,7 +116,7 @@ public class LipGloss extends AppCompatActivity implements DatePickerDialog.OnDa
                 intent.putExtra(CalendarContract.EXTRA_EVENT_BEGIN_TIME, beginTime.getTimeInMillis());
                 intent.putExtra(CalendarContract.EXTRA_EVENT_END_TIME, endTime.getTimeInMillis());
                 intent.putExtra(CalendarContract.Events.ALL_DAY, false);
-                intent.putExtra(CalendarContract.Events.TITLE, "Lip Gloss update for " + newBrandName.getText().toString());
+                intent.putExtra(CalendarContract.Events.TITLE, "Cream update for " + newBrandName.getText().toString());
                 intent.putExtra(CalendarContract.Events.DESCRIPTION, "Expiration date for" + newBrandName.getText().toString() + " "+ type.getSelectedItem().toString());
                 startActivity(intent);
                 dialog.dismiss();
@@ -130,16 +129,14 @@ public class LipGloss extends AppCompatActivity implements DatePickerDialog.OnDa
                 Calendar.getInstance().get(Calendar.MONTH), Calendar.getInstance().get(Calendar.DAY_OF_MONTH));
         datePickerDialog.show();
     }
-
     @Override
     public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
         String date = month + "/ " + dayOfMonth + " / " + year;
         newpurchaseDate.setText(date);
-        String newdate = month + "/ " + dayOfMonth + " / " + (year + 1);
+        String newdate = month + "/ " + dayOfMonth + " / " + (year + 2);
         newexpiration.setText(newdate);
         oldDay = dayOfMonth;
         oldMonth = month;
-        newYear = (year +1);
-        oldYear = year;
+        newYear = (year +2);
     }
 }

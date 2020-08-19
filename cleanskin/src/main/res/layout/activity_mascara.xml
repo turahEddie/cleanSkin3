@@ -49,18 +49,17 @@
 
     <TextView
         android:id="@+id/textView17"
-        android:layout_width="271dp"
-        android:layout_height="60dp"
+        android:layout_width="268dp"
+        android:layout_height="79dp"
         android:layout_marginTop="164dp"
         android:gravity="center"
-        android:text="@string/concealertext2"
+        android:text="@string/mascaratext2"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4"
-        app:layout_constraintVertical_bias="0.087" />
+        app:layout_constraintVertical_bias="0.03" />
 
     <TextView
         android:id="@+id/textView15"
@@ -68,14 +67,14 @@
         android:layout_height="63dp"
         android:layout_marginTop="72dp"
         android:gravity="center"
-        android:text="@string/concealertext"
+        android:text="@string/mascaratext"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/textView17"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.544"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4"
-        app:layout_constraintVertical_bias="0.517" />
+        app:layout_constraintVertical_bias="0.2" />
 
     <TextView
         android:id="@+id/textView8"

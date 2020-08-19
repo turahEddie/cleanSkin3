@@ -30,6 +30,9 @@ public class AddNewMakeup extends AppCompatActivity  {
         LinearLayout powder = findViewById(R.id.powder_btn);
         ImageView home = findViewById(R.id.home);
         Button add = findViewById(R.id.add);
+        LinearLayout eyelash = findViewById(R.id.eyelashes_btn);
+        LinearLayout nail = findViewById(R.id.nail_btn);
+        LinearLayout eyeliner = findViewById(R.id.eyeliner_btn);
 
         //return home
         home.setOnClickListener(new View.OnClickListener() {
@@ -87,5 +90,21 @@ public class AddNewMakeup extends AppCompatActivity  {
                 startActivity(new Intent(AddNewMakeup.this, Powder.class));
             }
         });
+        eyelash.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(AddNewMakeup.this, Eyelash.class));
+            }
+        });
+        nail.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(AddNewMakeup.this, nail.class));
+            }
+        });
+        eyeliner.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(AddNewMakeup.this, Eyeliner.class));
+            }
+        });
+
     }
-}
+};

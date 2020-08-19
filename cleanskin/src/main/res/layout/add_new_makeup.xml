@@ -77,14 +77,14 @@
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:layout_gravity="center"
-                        app:srcCompat="@drawable/eyeliner01" />
+                        app:srcCompat="@drawable/mascara" />
 
                     <TextView
                         android:id="@+id/textView11"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="Mascara"
+                        android:text="@string/Mascara"
                         android:textSize="18sp" />
                 </LinearLayout>
 
@@ -108,7 +108,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/noto_sans"
                         android:gravity="center"
-                        android:text="Blush"
+                        android:text="@string/blush"
                         android:textSize="18sp" />
                 </LinearLayout>
 
@@ -132,7 +132,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/noto_sans"
                         android:gravity="center"
-                        android:text="Powder"
+                        android:text="@string/powder"
                         android:textSize="18sp" />
                 </LinearLayout>
             </LinearLayout>
@@ -162,7 +162,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/noto_sans"
                         android:gravity="center"
-                        android:text="Eyeshadow"
+                        android:text="@string/eyeshadow"
                         android:textSize="18sp" />
                 </LinearLayout>
 
@@ -212,7 +212,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/noto_sans"
                         android:gravity="center"
-                        android:text="Lip Gloss"
+                        android:text="@string/lipgloss"
                         android:textSize="18sp" />
                 </LinearLayout>
             </LinearLayout>
@@ -245,7 +245,7 @@
                         android:layout_weight="1"
                         android:fontFamily="@font/noto_sans"
                         android:gravity="center"
-                        android:text="Concealer"
+                        android:text="@string/concealer"
                         android:textSize="18sp" />
                 </LinearLayout>
 
@@ -272,7 +272,7 @@
                         android:layout_weight="1"
                         android:fontFamily="@font/noto_sans"
                         android:gravity="center"
-                        android:text="Foundation"
+                        android:text="@string/foundation"
                         android:textSize="18sp" />
                 </LinearLayout>
 
@@ -328,7 +328,7 @@
                         android:layout_weight="1"
                         android:fontFamily="@font/noto_sans"
                         android:gravity="center"
-                        android:text="Eyelashes"
+                        android:text="@string/Eyelashes"
                         android:textSize="18sp" />
                 </LinearLayout>
 
@@ -354,12 +354,12 @@
                         android:layout_weight="1"
                         android:fontFamily="@font/noto_sans"
                         android:gravity="center"
-                        android:text="Nail"
+                        android:text="@string/nail"
                         android:textSize="18sp" />
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/brush_btn"
+                    android:id="@+id/eyeliner_btn"
                     android:layout_width="130dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
@@ -370,14 +370,14 @@
                     <ImageView
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        app:srcCompat="@drawable/sponge" />
+                        app:srcCompat="@drawable/eyeliner3" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/noto_sans"
                         android:gravity="center"
-                        android:text="Brushes"
+                        android:text="@string/eyeliner"
                         android:textSize="18sp" />
                 </LinearLayout>
             </LinearLayout>
