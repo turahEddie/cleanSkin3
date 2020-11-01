@@ -143,10 +143,10 @@ public class Treatment extends AppCompatActivity implements DatePickerDialog.OnD
         oldYear = year;
 
         int tempMonth = month + 6;
-        if (tempMonth <= 12) {
-            String newdate = (12 - tempMonth) + "/ " + dayOfMonth + " / " + (year + 1);
+        if (tempMonth >= 12) {
+            String newdate = (tempMonth - 12) + "/ " + dayOfMonth + " / " + (year + 1);
             newYear = (year + 1);
-            newMonth = (12 - tempMonth);
+            newMonth = (tempMonth - 12);
             newexpiration.setText(newdate);
         } else {
             String newdate = tempMonth + "/ " + dayOfMonth + " / " + year ;

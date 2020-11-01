@@ -77,14 +77,14 @@
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:layout_gravity="center"
-                        app:srcCompat="@drawable/cream_1" />
+                        app:srcCompat="@drawable/moisturizer" />
 
                     <TextView
                         android:id="@+id/textView11"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="Cream"
+                        android:text="@string/moisturizer"
                         android:textSize="18sp" />
                 </LinearLayout>
 

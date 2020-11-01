@@ -64,11 +64,11 @@
 
     <TextView
         android:id="@+id/textView15"
-        android:layout_width="281dp"
-        android:layout_height="63dp"
+        android:layout_width="353dp"
+        android:layout_height="68dp"
         android:layout_marginTop="72dp"
         android:gravity="center"
-        android:text="@string/concealertext"
+        android:text="@string/lipsticktext1"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/textView17"
         app:layout_constraintEnd_toEndOf="parent"

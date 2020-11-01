@@ -19,6 +19,7 @@
     <string name="lipgloss">Lip Gloss</string>
     <string name="powder">Powder</string>
     <string name="Mascara">Mascara</string>
+    <string name="moisturizer">Moisturizer</string>
     -----------------------------------------------------------------------------------------------------
     <string name="why">Why is Cruelty free makeup important?</string>
     <string name="crueltyFreeParagraph">As we know today that more and more makeup brands are producing cruelty makeup.
@@ -77,8 +78,12 @@
     </string-array>
     <string-array name="treatments">
         <item>Types of Treatment</item>
-        <item>Face Peel</item>
-        <item>Blemish and Acne Treatment</item>
+        <item>Microdermabrasion</item>
+        <item>Chemical Peel</item>
+        <item>Laser Resurfacing</item>
+        <item>Laser Skin Rejuvenation</item>
+        <item>Acne Blue Light Therapy</item>
+        <item>Thermage</item>
     </string-array>
     <string-array name="mask">
         <item>Type of Mask</item>
@@ -110,5 +115,31 @@
     <string name="foundationtext2">Keeping Foundation germ free is to keep fingers away from the product.
     if any discoloration and separation occurs, throw the product away immediately </string>
     <string name="lipglosstext">Types of Lip Gloss: Meant for high shine</string>
-    <string name="lipglosstext2">if Discoloration and separation occurs throw away immediately</string>
+    <string name="lipglosstext2">If Discoloration and separation occurs throw away immediately</string>
+    ---source from https://www.bllashes.com/blogs/blog/how-long-can-eyelash-glue-last
+    <string name="eyelashtext">Eyelashes Depend on three things, when the glue is manufactured
+        , when the glue is opened for the first time
+        , and how it\'s stored</string>
+    ---source
+    <string name="cleansertext">Cleanser active ingredients tend to lose effectiveness after six months
+    of usage </string>
+
+    <string name="eyeshadowtext1">Types of Eyeshadow: Cream, and Powder</string>
+    <string name="eyeshadowtext2">Powder eyeshadow\'s do last longer like powder blush, however it is ideal
+    to replace more often since we use it around our eyes</string>
+    <string name="facemasktext1">Generally can expire one to two years after the manufacturing date. Over time, the masks
+        can become irritating to your face as the chemicals and ingredients within them begin to break down. Source from
+    Dailyvanity.sg.</string>
+    <string name="facemasktext2">Active ingredients, particularly glycolic and fruit acids, will become more potent and
+        hence more irritating for your skin – so toss those expired face masks out ASAP</string>
+    <string name="lipsticktext1">Lipstick doesn\’t hold much bacteria, so it can last between 12 – 18 months.</string>
+    <string name="powdertext2">Since powders don\'t contain water it is very hard for bacteria to grow</string>
+    <string name="powdertext">Types of powders: Highlighters and translucent powder</string>
+    <string name="creamtext1">Over time and depending on the conditions in which you keep your moisturizer,
+        you\’ll start to notice a difference in color and even smell. If this happens, say goodbye to that bottle.</string>
+    <string name="nailtext1">“Nail polishes tend to get thick, dry and sticky after a year or so,” says Dr.Shainhouse .
+        Though she adds that you can try to thin them out by adding acetone. But if they start going bitter, let them go.</string>
+    <string name="lotiontext1">An expired lotion doesn\’t hurt or damage skin, but the product won\’t lock in moisture
+        or hydrate as thoroughly. Sealed and unopened bottles should be good for three years.</string>
+    <string name ="treatmentstext1">This page is use to track upcoming appointment or to remind you to make an skin treatment appointment</string>
 </resources>

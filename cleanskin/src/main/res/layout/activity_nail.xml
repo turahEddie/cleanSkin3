@@ -48,34 +48,18 @@
         app:srcCompat="@drawable/nail_polish01" />
 
     <TextView
-        android:id="@+id/textView17"
-        android:layout_width="271dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="164dp"
+        android:id="@+id/textView15"
+        android:layout_width="279dp"
+        android:layout_height="196dp"
+        android:layout_marginTop="72dp"
         android:gravity="center"
-        android:text="@string/concealertext2"
+        android:text="@string/nailtext1"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4"
-        app:layout_constraintVertical_bias="0.087" />
-
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="281dp"
-        android:layout_height="63dp"
-        android:layout_marginTop="72dp"
-        android:gravity="center"
-        android:text="@string/concealertext"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView17"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
-        app:layout_constraintVertical_bias="0.517" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView8"
@@ -117,5 +101,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        app:layout_constraintVertical_bias="0.322" />
 </androidx.constraintlayout.widget.ConstraintLayout>
