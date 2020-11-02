@@ -118,7 +118,7 @@ public class BrowPencil extends AppCompatActivity implements DatePickerDialog.On
                 intent.putExtra(CalendarContract.EXTRA_EVENT_END_TIME, endTime.getTimeInMillis());
                 intent.putExtra(CalendarContract.Events.ALL_DAY, false);
                 intent.putExtra(CalendarContract.Events.TITLE, "Brow Makeup update for " + newBrandName.getText().toString());
-                intent.putExtra(CalendarContract.Events.DESCRIPTION, "Expiration date for" + newBrandName.getText().toString() + " "+ type.getSelectedItem().toString());
+                intent.putExtra(CalendarContract.Events.DESCRIPTION, "Expiration date for " + newBrandName.getText().toString() + " "+ type.getSelectedItem().toString());
                 startActivity(intent);
                 dialog.dismiss();
             }
@@ -144,7 +144,7 @@ public class BrowPencil extends AppCompatActivity implements DatePickerDialog.On
             newYear = (year + 2);
         }else if(oppick.equals("Gel")){
             int newMonth = month + 6;
-            if(newMonth > 12){
+            if(newMonth >= 12){
                 String newDate = (newMonth - 12) + " / " + dayOfMonth + " / " + (year + 1);
                 newexpiration.setText(newDate);
                 oldMonth = (newMonth - 12);

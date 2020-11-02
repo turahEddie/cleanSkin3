@@ -124,7 +124,7 @@ public class Eyeshadow extends AppCompatActivity implements DatePickerDialog.OnD
                 intent.putExtra(CalendarContract.EXTRA_EVENT_END_TIME, endTime.getTimeInMillis());
                 intent.putExtra(CalendarContract.Events.ALL_DAY, false);
                 intent.putExtra(CalendarContract.Events.TITLE, "Eyeshadow update for " + newBrandName.getText().toString());
-                intent.putExtra(CalendarContract.Events.DESCRIPTION, "Expiration date for" + newBrandName.getText().toString() + " "+ type.getSelectedItem().toString());
+                intent.putExtra(CalendarContract.Events.DESCRIPTION, "Expiration date for " + newBrandName.getText().toString() + " "+ type.getSelectedItem().toString());
                 startActivity(intent);
                 dialog.dismiss();
             }
@@ -150,7 +150,7 @@ public class Eyeshadow extends AppCompatActivity implements DatePickerDialog.OnD
             newYear = (year + 1);
         }else if(oppick.equals("Cream")){
             int tempMonth = month + 6;
-            if(tempMonth > 12){
+            if(tempMonth >= 12){
                 String newDate = (tempMonth - 12 ) + " / " + dayOfMonth + " / " + (year + 1);
                 newexpiration.setText(newDate);
                 newMonth = (tempMonth - 12);

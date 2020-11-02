@@ -118,7 +118,7 @@ public class Cream extends AppCompatActivity implements DatePickerDialog.OnDateS
                 intent.putExtra(CalendarContract.EXTRA_EVENT_END_TIME, endTime.getTimeInMillis());
                 intent.putExtra(CalendarContract.Events.ALL_DAY, false);
                 intent.putExtra(CalendarContract.Events.TITLE, "Cream update for " + newBrandName.getText().toString());
-                intent.putExtra(CalendarContract.Events.DESCRIPTION, "Expiration date for" + newBrandName.getText().toString() + " "+ type.getSelectedItem().toString());
+                intent.putExtra(CalendarContract.Events.DESCRIPTION, "Expiration date for " + newBrandName.getText().toString() + " "+ type.getSelectedItem().toString());
                 startActivity(intent);
                 dialog.dismiss();
             }
