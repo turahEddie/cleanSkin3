@@ -136,11 +136,18 @@ public class Powder extends AppCompatActivity implements DatePickerDialog.OnDate
     public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
         String date = month + "/ " + dayOfMonth + " / " + year;
         newpurchaseDate.setText(date);
-        String newdate = month + "/ " + dayOfMonth + " / " + (year + 2);
-        newexpiration.setText(newdate);
+        String oppick = type.getSelectedItem().toString();
         oldDay = dayOfMonth;
-        oldMonth = month;
-        oldYear = year;
-        newYear = (year +2);
+        if(oppick.equals("Highlighter") || oppick.equals("Translucent")){
+            String newdate = month + "/ " + dayOfMonth + " / " + (year + 2);
+            newexpiration.setText(newdate);
+            oldDay = dayOfMonth;
+            oldMonth = month;
+            oldYear = year;
+            newYear = (year +2);
+        }else{
+            newexpiration.setText("Pick a Type First");
+        }
+
     }
 }

@@ -113,10 +113,10 @@
     <ImageView
         android:id="@+id/datePicker"
         android:layout_width="39dp"
-        android:layout_height="43dp"
+        android:layout_height="40dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="42dp"
+        android:layout_marginTop="40dp"
         android:background="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/NewExpirationDate"
         app:layout_constraintEnd_toEndOf="@+id/imageView16"

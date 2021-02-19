@@ -49,7 +49,6 @@
         <item>Exfoliating</item>
     </string-array>
     <string-array name="coucealer">
-        <item>Type of Concealer</item>
         <item>Cream</item>
     </string-array>
     <string-array name="N_A">
@@ -73,6 +72,7 @@
         <item>BB and CC Creams</item>
     </string-array>
     <string-array name="powders">
+        <item>Type of Powder</item>
         <item>Highlighter</item>
         <item>Translucent</item>
     </string-array>
@@ -91,10 +91,12 @@
         <item>Wash-off Mask</item>
     </string-array>
     <string-array name="eyeliner">
+        <item>Type of Eyeliner</item>
         <item>Pencil</item>
         <item>Liquid</item>
     </string-array>
     <string-array name="nail">
+        <item>Type of Nail Polish</item>
         <item>Regular</item>
         <item>Gel</item>
     </string-array>
@@ -142,4 +144,7 @@
     <string name="lotiontext1">An expired lotion doesn\’t hurt or damage skin, but the product won\’t lock in moisture
         or hydrate as thoroughly. Sealed and unopened bottles should be good for three years.</string>
     <string name ="treatmentstext1">This page is use to track upcoming appointment or to remind you to make an skin treatment appointment</string>
+    <string name = "clinic">Clinic name</string>
+    <string name ="app"> Today\'s date</string>
+    <string name ="nextapp">Next Appointment</string>
 </resources>

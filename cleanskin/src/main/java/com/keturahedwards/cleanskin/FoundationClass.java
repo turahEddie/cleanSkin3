@@ -160,6 +160,8 @@ public class FoundationClass extends AppCompatActivity implements DatePickerDial
                 newMonth = tempMonth;
                 newYear = year;
             }
+        }else{
+            newexpiration.setText("Pick a Type First");
         }
     }
 }

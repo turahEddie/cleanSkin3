@@ -146,6 +146,8 @@ public class LipstickClass extends AppCompatActivity implements DatePickerDialog
             String newdate = month + "/ " + dayOfMonth + " / " + (year + 1);
             newexpiration.setText(newdate);
             newYear = (year +1);
+        }else{
+            newexpiration.setText("Pick a Type First");
         }
     }
 }

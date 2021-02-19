@@ -305,7 +305,9 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:paddingLeft="60dp"
+                android:paddingRight="50dp">
 
                 <LinearLayout
                     android:id="@+id/pills_btn"
@@ -331,32 +333,6 @@
                         android:fontFamily="@font/noto_sans"
                         android:gravity="center"
                         android:text="Pills"
-                        android:textSize="18sp" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/facial_treatment_btn"
-                    android:layout_width="130dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="10dp">
-
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/facial_treatment" />
-
-                    <TextView
-                        android:id="@+id/facialTreatment"
-                        android:layout_width="107dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:fontFamily="@font/noto_sans"
-                        android:gravity="center"
-                        android:text="Facial Treatment"
                         android:textSize="18sp" />
                 </LinearLayout>
 

@@ -157,10 +157,12 @@ public class Blush extends AppCompatActivity implements DatePickerDialog.OnDateS
                 newYear = (year + 2);
             }
             else if(oppick.equals("Liquid")){
-
+                String newdate = month + "/ " + dayOfMonth + "/" + +(year + 1);
+                newexpiration.setText(newdate);
+                newYear = (year + 1);
             }
             else if (oppick.equals("Type of Blush")){
-
+                newexpiration.setText("Pick a Type First");
             }
         } catch (Exception e) {
 

@@ -162,6 +162,8 @@ public class Eyeshadow extends AppCompatActivity implements DatePickerDialog.OnD
                 newMonth = tempMonth;
                 newYear = year;
             }
+        }else{
+            newexpiration.setText("Pick a Type First");
         }
     }
 }

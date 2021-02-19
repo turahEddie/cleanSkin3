@@ -137,10 +137,17 @@ public class Cleanser extends AppCompatActivity implements DatePickerDialog.OnDa
     public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
         String date = month + "/ " + dayOfMonth + " / " + year;
         newpurchaseDate.setText(date);
-        String newdate = month + "/ " + dayOfMonth + " / " + (year + 2);
-        newexpiration.setText(newdate);
-        newYear = (year + 2);
+        String oppick = type.getSelectedItem().toString();
         oldDay = dayOfMonth;
-        oldMonth = month;
+        if(oppick.equals("Foaming")|| oppick.equals("Cleansing Balm")||oppick.equals("Exfoliating")){
+            String newdate = month + "/ " + dayOfMonth + " / " + (year + 2);
+            newexpiration.setText(newdate);
+            newYear = (year + 2);
+            oldDay = dayOfMonth;
+            oldMonth = month;
+        }else{
+            newexpiration.setText("Pick a Type First");
+        }
+
     }
 }

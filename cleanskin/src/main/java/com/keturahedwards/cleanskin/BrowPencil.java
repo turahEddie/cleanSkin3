@@ -159,6 +159,8 @@ public class BrowPencil extends AppCompatActivity implements DatePickerDialog.On
             newexpiration.setText(newdate);
             oldMonth = month;
             newYear = (year +2);
+        }else{
+            newexpiration.setText("Pick a Type First");
         }
     }
 }
