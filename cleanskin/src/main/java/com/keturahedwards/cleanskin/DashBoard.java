@@ -8,8 +8,8 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
 
-public class DashBoard extends AppCompatActivity {
 
+public class DashBoard extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,16 +21,17 @@ public class DashBoard extends AppCompatActivity {
         ImageView cruelty = findViewById(R.id.cruelty_free);
         ImageView parabenFree = findViewById(R.id.paraben_free);
         ImageView recycle = findViewById(R.id.recycle);
+
         makeup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(DashBoard.this, AddNewMakeup.class));
+                startActivity(new Intent(DashBoard.this, qrscanner.class));
             }
         });
         skincare.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(DashBoard.this, AddNewSkinCare.class));
+                startActivity(new Intent(DashBoard.this, qrscanner.class));
             }
         });
         cruelty.setOnClickListener(new View.OnClickListener() {
