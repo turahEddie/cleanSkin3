@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">Clean Skin</string>
-    <string name="addnew">Add new Makeup</string>
+    <string name="addnew">Add new makeup</string>
     <string name="submit">submit</string>
     <string name="add">Add to Calendar</string>
     <string name="brand">Brand</string>
-    <string name="add_new_makeup">Add New Makeup</string>
+    <string name="add_new_makeup">Add new skincare</string>
     <string name="lipstick">Lipstick</string>
     <string name="brow_pencil">Eye Brow</string>
     <string name="blush">Blush</string>
@@ -112,7 +112,7 @@
     <string name="eyebrowtext">Types of Eyebrow: Pencil, Pomade, Gel, and Powder</string>
     <string name="eyebrowtext2">Pencil will last longer than the pomade and gel due to being sharpened
     on a constant basis</string>
-    <string name="mascaratext">Types of Mascara: Waterproof,and Regular</string>
+    <string name="mascaratext">Types of Mascara: Waterproof, and Regular</string>
     <string name="mascaratext2">If Mascara is unopened, the shelf life will be up to 3 years</string>
     <string name="foundationtext">Types of Foundation: Liquid, Cream, Powder, BB creams and CC creams</string>
     <string name="foundationtext2">Keeping Foundation germ free is to keep fingers away from the product.
@@ -144,8 +144,14 @@
         Though she adds that you can try to thin them out by adding acetone. But if they start going bitter, let them go.</string>
     <string name="lotiontext1">An expired lotion doesn\’t hurt or damage skin, but the product won\’t lock in moisture
         or hydrate as thoroughly. Sealed and unopened bottles should be good for three years.</string>
-    <string name ="treatmentstext1">This page is use to track upcoming appointment or to remind you to make an skin treatment appointment</string>
-    <string name = "clinic">Clinic name</string>
-    <string name ="app"> Today\'s date</string>
-    <string name ="nextapp">Next Appointment</string>
+    <string name ="Brush">This page is to keep track of cleaning your brushes</string>
+    <string name ="RecycleText1">Recycle is important according to science</string>
+    <string name ="AboutMeHeader">About me</string>
+    <string name ="AboutMeTextP">
+         I developed this app because I wanted an app that would help me track
+        the expiration date of every makeup product I use. I intended to make something simple and straight to the point.
+        I started to do concept art of this app back in 2020.</string>
+    <string name= "AboutMeTextP2">When I graduated I didn’t have a job lined up. That’s when I started to  develop the program.
+        It was rough because I had to make it cute and appealing to the eye.I did work on this program by myself.
+        procrastinated for a year since I did get a job.I am writing about myself in two years.</string>
 </resources>

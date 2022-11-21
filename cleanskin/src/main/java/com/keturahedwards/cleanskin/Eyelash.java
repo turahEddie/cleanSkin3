@@ -73,7 +73,6 @@ public class Eyelash extends AppCompatActivity implements DatePickerDialog.OnDat
         newexpiration = (EditText) createPopUpWindow.findViewById(R.id.NewExpirationDate);
         icon = (ImageView) createPopUpWindow.findViewById(R.id.blank);
         icon.setImageResource((R.drawable.eyelashes));
-
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.N_A, android.R.layout.simple_spinner_dropdown_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         type.setAdapter(adapter);

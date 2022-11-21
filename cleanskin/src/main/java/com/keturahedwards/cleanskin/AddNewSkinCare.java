@@ -24,9 +24,9 @@ public class AddNewSkinCare extends AppCompatActivity {
         LinearLayout lotion = findViewById(R.id.lotion_btn);
         LinearLayout perfume = findViewById(R.id.perfume_btn);
         LinearLayout serum = findViewById(R.id.serum_btn);
-        LinearLayout sunscreen = findViewById(R.id.sunscreen_btn);
+        LinearLayout sunscreen = findViewById(R.id.brush_btn);
         LinearLayout toner = findViewById(R.id.toner_btn);
-        LinearLayout treatment = findViewById(R.id.treatment_btn);
+        LinearLayout treatment = findViewById(R.id.brush_btn);
         ImageView home = findViewById(R.id.home);
         Button add = findViewById(R.id.add);
 
@@ -89,7 +89,7 @@ public class AddNewSkinCare extends AppCompatActivity {
         treatment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(AddNewSkinCare.this, Treatment.class));
+                startActivity(new Intent(AddNewSkinCare.this, brush.class));
             }
         });
 

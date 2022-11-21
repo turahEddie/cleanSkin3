@@ -25,13 +25,13 @@ public class DashBoard extends AppCompatActivity {
         makeup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(DashBoard.this, qrscanner.class));
+                startActivity(new Intent(DashBoard.this, AddNewMakeup.class));
             }
         });
         skincare.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(DashBoard.this, qrscanner.class));
+                startActivity(new Intent(DashBoard.this, AddNewSkinCare.class));
             }
         });
         cruelty.setOnClickListener(new View.OnClickListener() {

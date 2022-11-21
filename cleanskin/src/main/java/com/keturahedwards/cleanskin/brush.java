@@ -17,13 +17,12 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Spinner;
 
 import java.util.Calendar;
 
-public class Treatment extends AppCompatActivity implements DatePickerDialog.OnDateSetListener{
+public class brush extends AppCompatActivity implements DatePickerDialog.OnDateSetListener{
 
     Animation zoom_in;
     ImageView background_image;
@@ -45,7 +44,7 @@ public class Treatment extends AppCompatActivity implements DatePickerDialog.OnD
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_treatment);
+        setContentView(R.layout.activity_brushcleaning);
 
         zoom_in = AnimationUtils.loadAnimation(this, R.anim.slide_down);
         background_image = findViewById(R.id.background);
@@ -55,7 +54,7 @@ public class Treatment extends AppCompatActivity implements DatePickerDialog.OnD
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Treatment.this, DashBoard.class));
+                startActivity(new Intent(brush.this, DashBoard.class));
             }
         });
         Button add = findViewById(R.id.add);
@@ -76,7 +75,7 @@ public class Treatment extends AppCompatActivity implements DatePickerDialog.OnD
         newexpiration = (EditText) createPopUpWindow.findViewById(R.id.NewExpirationDate);
 
         icon = (ImageView) createPopUpWindow.findViewById(R.id.blank);
-        icon.setImageResource((R.drawable.treatment));
+        icon.setImageResource((R.drawable.brush));
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.treatments, android.R.layout.simple_spinner_dropdown_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);

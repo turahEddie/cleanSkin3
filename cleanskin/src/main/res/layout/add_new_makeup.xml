@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="match_parent"
-        android:layout_height="130dp"
+        android:layout_width="405dp"
+        android:layout_height="112dp"
         android:background="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -32,23 +32,25 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="278dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="44dp"
+        android:layout_width="263dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="35dp"
         android:fontFamily="@font/noto_sans"
         android:text="@string/add_new_makeup"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/scrollView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.27"
         app:layout_constraintStart_toEndOf="@+id/home"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="385dp"
-        android:layout_height="605dp"
+        android:layout_width="355dp"
+        android:layout_height="602dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -56,19 +58,20 @@
         app:layout_constraintVertical_bias="0">
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
+                android:layout_height="145dp"
                 android:orientation="horizontal">
 
                 <LinearLayout
                     android:id="@+id/mascara_btn"
-                    android:layout_width="130dp"
+                    android:layout_width="118dp"
                     android:layout_height="match_parent"
+                    android:layout_gravity="center"
                     android:gravity="center"
                     android:orientation="vertical">
 
@@ -90,7 +93,7 @@
 
                 <LinearLayout
                     android:id="@+id/blush_btn"
-                    android:layout_width="130dp"
+                    android:layout_width="118dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:gravity="center"
@@ -114,7 +117,7 @@
 
                 <LinearLayout
                     android:id="@+id/powder_btn"
-                    android:layout_width="130dp"
+                    android:layout_width="118dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:gravity="center"
@@ -139,12 +142,12 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
+                android:layout_height="145dp"
                 android:orientation="horizontal">
 
                 <LinearLayout
                     android:id="@+id/eyeshadow_btn"
-                    android:layout_width="130dp"
+                    android:layout_width="118dp"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:padding="10dp">
@@ -168,7 +171,7 @@
 
                 <LinearLayout
                     android:id="@+id/browPencil_btn"
-                    android:layout_width="130dp"
+                    android:layout_width="118dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:gravity="center"
@@ -193,7 +196,7 @@
 
                 <LinearLayout
                     android:id="@+id/lipgloss_btn"
-                    android:layout_width="130dp"
+                    android:layout_width="118dp"
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:orientation="vertical"
@@ -219,12 +222,12 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
+                android:layout_height="145dp"
                 android:orientation="horizontal">
 
                 <LinearLayout
                     android:id="@+id/concealer_btn"
-                    android:layout_width="130dp"
+                    android:layout_width="118dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:gravity="center"
@@ -251,7 +254,7 @@
 
                 <LinearLayout
                     android:id="@+id/foundation_btn"
-                    android:layout_width="130dp"
+                    android:layout_width="118dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:gravity="center"
@@ -278,7 +281,7 @@
 
                 <LinearLayout
                     android:id="@+id/lipstick_btn"
-                    android:layout_width="130dp"
+                    android:layout_width="118dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:gravity="center"
@@ -304,12 +307,12 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="145dp"
                 android:orientation="horizontal">
 
                 <LinearLayout
                     android:id="@+id/eyelashes_btn"
-                    android:layout_width="130dp"
+                    android:layout_width="118dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:gravity="center"
@@ -334,7 +337,7 @@
 
                 <LinearLayout
                     android:id="@+id/nail_btn"
-                    android:layout_width="130dp"
+                    android:layout_width="118dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:gravity="center"
@@ -360,7 +363,7 @@
 
                 <LinearLayout
                     android:id="@+id/eyeliner_btn"
-                    android:layout_width="130dp"
+                    android:layout_width="118dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:gravity="center"

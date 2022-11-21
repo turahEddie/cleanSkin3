@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Recycle">
+    tools:context=".ParabenFree">
 
     <ImageView
         android:id="@+id/imageView"
@@ -16,7 +16,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/rounded_background3" />
+        app:srcCompat="@drawable/round_backgroud" />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -29,16 +29,39 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.139"
-        app:srcCompat="@drawable/save_the_world" />
+        app:srcCompat="@drawable/aboutme" />
 
     <TextView
-        android:id="@+id/recycle_text_box"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/RecycleText1"
+        android:id="@+id/textView5"
+        android:layout_width="293dp"
+        android:layout_height="128dp"
+        android:text="@string/AboutMeTextP"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.243" />
+
+    <TextView
+        android:id="@+id/about_me_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/AboutMeHeader"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="291dp"
+        android:layout_height="146dp"
+        android:text="@string/AboutMeTextP2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.245" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
